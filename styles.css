@@ -43,8 +43,8 @@ a {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 28px;
-  min-height: 82px;
-  padding: 12px clamp(18px, 4vw, 56px);
+  min-height: 70px;
+  padding: 10px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid rgba(216, 224, 236, 0.7);
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06);
@@ -53,7 +53,7 @@ a {
 
 .brand img {
   display: block;
-  width: 138px;
+  width: 112px;
   height: auto;
 }
 
@@ -111,7 +111,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  min-height: min(740px, 88vh);
+  min-height: min(590px, 74vh);
   align-items: center;
   overflow: hidden;
   color: var(--ink);
@@ -150,9 +150,9 @@ a {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 690px;
+  max-width: 600px;
   margin-inline-start: auto;
-  padding: 92px clamp(20px, 6vw, 76px) 118px;
+  padding: 72px clamp(20px, 6vw, 76px) 88px;
   text-align: right;
   direction: rtl;
 }
@@ -187,11 +187,11 @@ p {
 }
 
 h1 {
-  max-width: 760px;
-  margin-bottom: 24px;
+  max-width: 620px;
+  margin-bottom: 18px;
   color: var(--blue-dark);
-  font-size: clamp(2.55rem, 5.5vw, 5.15rem);
-  line-height: 1.03;
+  font-size: clamp(2.1rem, 4.2vw, 3.75rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
@@ -210,7 +210,7 @@ h3 {
 }
 
 .hero-content p:not(.eyebrow) {
-  max-width: 610px;
+  max-width: 560px;
   color: var(--muted);
   font-size: clamp(1.05rem, 2vw, 1.24rem);
 }
@@ -245,7 +245,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1120px;
-  margin: -52px auto 0;
+  margin: -28px auto 0;
   border: 1px solid rgba(216, 224, 236, 0.72);
   border-radius: 8px;
   background: var(--white);
@@ -254,7 +254,7 @@ h3 {
 }
 
 .signal-strip div {
-  padding: 28px 24px;
+  padding: 22px 22px;
   border-inline-start: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(31, 90, 166, 0.035), transparent),
@@ -268,7 +268,7 @@ h3 {
 .signal-strip strong {
   display: block;
   color: var(--blue-dark);
-  font-size: clamp(1.35rem, 2.6vw, 2.15rem);
+  font-size: clamp(1.2rem, 2.1vw, 1.75rem);
   line-height: 1;
 }
 
@@ -651,7 +651,7 @@ h3 {
   }
 
   .hero {
-    min-height: 720px;
+    min-height: 580px;
   }
 
   .hero-overlay {
@@ -661,11 +661,11 @@ h3 {
   }
 
   .hero-content {
-    padding-block: 62px 82px;
+    padding-block: 48px 64px;
   }
 
   h1 {
-    font-size: clamp(2.3rem, 13vw, 3.4rem);
+    font-size: clamp(2rem, 10vw, 2.75rem);
   }
 
   .hero-actions,
