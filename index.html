@@ -32,7 +32,10 @@
         <a href="#employees">עובדים</a>
         <a href="#contact">צור קשר</a>
       </nav>
-      <a class="header-cta" href="https://wa.me/97286288289" target="_blank" rel="noreferrer">קבלת הצעה</a>
+      <div class="header-actions" aria-label="פעולות מהירות">
+        <a class="header-cta header-cta-secondary" href="#jobs-form">דרושים</a>
+        <a class="header-cta header-cta-primary" href="https://wa.me/97286288289" target="_blank" rel="noreferrer">קבלת הצעה</a>
+      </div>
     </header>
 
     <main id="top">
@@ -52,7 +55,7 @@
           </h1>
           <p>
             ש.א.ס בע"מ מספקת פתרונות אבטחה ושמירה לעסקים, מוסדות, אתרים
-            ואירועים, עם דגש על התאמה אישית, נוכחות אחראית ושירות ישיר.
+              ואירועים. עם דגש על התאמה אישית, אחראיות ושירות ישיר.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="https://wa.me/97286288289" target="_blank" rel="noreferrer">יצירת קשר בוואטסאפ</a>
@@ -72,7 +75,7 @@
           <span>נוכחות קבועה באתר</span>
         </div>
         <div>
-          <strong>סיורים</strong>
+          <strong>סיורים רכובים</strong>
           <span>בקרה ותגובה</span>
         </div>
         <div>
@@ -90,11 +93,11 @@
           </p>
           <p>
             כחלק מהשירות החברה מפעילה מערכי אבטחה אזוריים הכוללים מאבטחים
-            סטטיים, סיירים ומפקחים בשטח, למשל במכרזים עירוניים, מוסדות חינוך,
+              סטטיים, סיירים ומפקחים בשטח. למשל במכרזים עירוניים, מוסדות חינוך,
             ישיבות, אולפנות, קייטנות ופארקים.
           </p>
           <p>
-            החברה מפעילה מערך סיירים ברכבים ואופנועים, ומספקת מענה מהיר
+              החברה מפעילה מערך סיירים ברכבים ואופנועים. ומספקת מענה מהיר
             ויעיל לעיריות כחלק מפעילות מערך האבטחה בשטח.
           </p>
         </div>
@@ -110,11 +113,11 @@
           </article>
           <article class="service-card">
             <h3>סיורים ובקרה</h3>
-            <p>סיירים ומפקח שטח המלווים את הפעילות, נותנים מענה ומבצעים בקרה.</p>
+            <p>סיירים ומפקחים בשטח.</p>
           </article>
           <article class="service-card">
             <h3>אבטחת אירועים</h3>
-            <p>אבטחה, הכוונת קהל וניהול כניסות באירועים ומתחמים.</p>
+            <p>אבטחה באירועים, מופעים ואירועי תרבות.</p>
           </article>
           <article class="service-card">
             <h3>מכרזים עירוניים</h3>
@@ -301,6 +304,35 @@
           </label>
           <button type="submit">שליחת פרטים</button>
         </form>
+        <form
+          id="jobs-form"
+          class="contact-form jobs-form"
+          action="https://formsubmit.co/shas@shasltd.co.il"
+          method="POST"
+          aria-label="טופס דרושים"
+        >
+          <div class="form-heading">
+            <p class="eyebrow">למערך האבטחה של חברת ש.א.ס דרושים למגוון אתרים ברחבי הארץ</p>
+            <h3>להצטרפות השאר/י פרטים</h3>
+            <p>השאירו פרטים ונציג החברה יחזור אליכם בהקדם.</p>
+          </div>
+          <input type="hidden" name="_subject" value="פניית דרושים חדשה מאתר ש.א.ס" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://www.shasltd.co.il/?sent=1#jobs-form" />
+          <label>
+            שם
+            <input type="text" name="candidate_name" placeholder="שם מלא" required />
+          </label>
+          <label>
+            טלפון
+            <input type="tel" name="candidate_phone" placeholder="מספר טלפון" required />
+          </label>
+          <label>
+            אזור
+            <input type="text" name="candidate_area" placeholder="אזור מגורים / אזור עבודה רצוי" required />
+          </label>
+          <button type="submit">שלח</button>
+        </form>
       </section>
 
       <section id="employees" class="employee-section">
@@ -308,9 +340,8 @@
           <p class="eyebrow">אזור עובדים</p>
           <h2>כניסה עתידית לעובדי החברה</h2>
           <p>
-            כאן יהיה מקום מסודר לכניסת עובדים לצפייה בתלושי שכר, דיווחי שעות
-            ומסמכים פנימיים. המידע הזה דורש מערכת מאובטחת עם שם משתמש, סיסמה
-            והרשאות, ולכן לא יישמר ישירות באתר הציבורי.
+              כאן יהיה מקום מסודר לכניסת עובדים לצפייה בתלושי שכר, דיווחי שעות
+              ומסמכים פנימיים.
           </p>
         </div>
         <div class="employee-panel">
@@ -437,7 +468,7 @@
         let offset = 0;
         let loopWidth = 0;
         let lastTime = null;
-        const speed = 0.018;
+        const speed = 0.036;
 
         const measure = () => {
           const firstClone = track.children[originals.length];

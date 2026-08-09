@@ -106,6 +106,14 @@ textarea:focus-visible {
   color: var(--red);
 }
 
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  direction: ltr;
+  white-space: nowrap;
+}
+
 .header-cta,
 .button {
   display: inline-flex;
@@ -118,9 +126,22 @@ textarea:focus-visible {
 
 .header-cta {
   padding: 12px 20px;
+  direction: rtl;
   background: linear-gradient(135deg, var(--blue), var(--blue-dark));
   color: var(--white);
   box-shadow: 0 12px 24px rgba(31, 90, 166, 0.18);
+}
+
+.header-cta-primary {
+  order: 2;
+}
+
+.header-cta-secondary {
+  order: 1;
+  border: 1px solid rgba(31, 90, 166, 0.24);
+  background: #ffffff;
+  color: var(--blue);
+  box-shadow: none;
 }
 
 .hero {
@@ -777,6 +798,57 @@ h3 {
   cursor: pointer;
 }
 
+.jobs-form {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  align-items: end;
+  margin-top: 6px;
+  padding: clamp(24px, 4vw, 34px);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
+}
+
+.jobs-form .form-heading {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 6px;
+  justify-items: center;
+  text-align: center;
+}
+
+.jobs-form .form-heading .eyebrow {
+  margin: 0;
+  justify-self: center;
+  max-width: 980px;
+  color: var(--white);
+  font-size: clamp(1.15rem, 2.1vw, 1.75rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.jobs-form h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.jobs-form .form-heading p:last-child {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.jobs-form button {
+  min-width: 120px;
+}
+
+.jobs-form label:nth-of-type(3),
+.jobs-form label:nth-of-type(3) input {
+  text-align: center;
+}
+
 .accessibility-statement {
   max-width: 1120px;
   margin: 0 auto;
@@ -990,6 +1062,7 @@ h3 {
 
 .a11y-contrast .button.primary,
 .a11y-contrast .header-cta,
+.a11y-contrast .header-cta-secondary,
 .a11y-contrast .accessibility-toggle {
   background: #ffff00;
   color: #000000;
@@ -1028,6 +1101,10 @@ h3 {
     grid-template-columns: 1fr auto;
   }
 
+  .header-actions {
+    gap: 8px;
+  }
+
   .site-nav {
     display: none;
   }
@@ -1044,6 +1121,14 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .jobs-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jobs-form button {
+    grid-column: 1 / -1;
+  }
+
   .signal-strip {
     margin-top: 0;
     border-radius: 0;
@@ -1056,6 +1141,10 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .jobs-form {
+    grid-template-columns: 1fr;
+  }
+
   .site-header {
     position: static;
     min-height: 68px;
@@ -1163,6 +1252,12 @@ h3 {
   background: var(--blue);
   color: #ffffff;
   box-shadow: none;
+}
+
+.cargo-preview .header-cta-secondary {
+  border: 1px solid rgba(31, 90, 166, 0.22);
+  background: #ffffff;
+  color: var(--blue);
 }
 
 .cargo-preview .hero {
