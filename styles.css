@@ -51,9 +51,11 @@ a {
   backdrop-filter: blur(16px);
 }
 
-.brand img {
+.brand img,
+.brand-logo {
   display: block;
   width: 112px;
+  max-width: 112px;
   height: auto;
 }
 
@@ -641,8 +643,10 @@ h3 {
     min-height: 68px;
   }
 
-  .brand img {
+  .brand img,
+  .brand-logo {
     width: 110px;
+    max-width: 110px;
   }
 
   .header-cta {
