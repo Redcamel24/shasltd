@@ -27,7 +27,7 @@
       <nav class="site-nav" aria-label="ניווט ראשי">
         <a href="#services">שירותים</a>
         <a href="#about">אודות</a>
-        <a href="#why">למה ש.א.ס</a>
+        <a href="#why">למה אנחנו</a>
         <a href="#trust">אמון</a>
         <a href="#employees">עובדים</a>
         <a href="#contact">צור קשר</a>
@@ -85,7 +85,7 @@
 
       <section id="services" class="section">
         <div class="section-heading">
-          <h2>שירותי האבטחה של ש.א.ס</h2>
+          <h2>שירותי האבטחה והמעטפת האבטחתית</h2>
           <p>
             החברה מספקת שירותי אבטחה חמושה ולא חמושה לאתרים שונים, בהתאם
             לאופי המקום, שעות הפעילות, רמת הרגישות והצרכים בשטח.
@@ -127,11 +127,13 @@
 
       <section id="about" class="profile-section">
         <div class="profile-image">
-          <img src="assets/hero-shas-vehicle.png" alt="רכב סיור של ש.א.ס" />
+          <img class="about-slide about-slide-one" src="assets/hero-shas-vehicle.png" alt="רכב סיור של ש.א.ס" />
+          <img class="about-slide about-slide-two" src="assets/about-security-guard-israel-flag.png" alt="מאבטח ש.א.ס עם דגל ישראל על הכתף לצד אופנועי סיור" />
+          <img class="about-slide about-slide-three" src="assets/about-scooters.png" alt="אופנועי סיור של ש.א.ס" />
         </div>
         <div class="profile-copy">
           <p class="eyebrow dark">אודות החברה</p>
-          <h2>חברת אבטחה מהותיקות והמובילות במשק הישראלי</h2>
+          <h2>חברת אבטחה מהותיקות והמובילות בשוק הישראלי</h2>
           <p>
             חברת שאס נוסדה בבאר שבע בשנת 1997 על ידי ששון קלימי, ומעסיקה
             מאות עובדים באזורים שונים בארץ. לחברה סניפים בבאר שבע, ירושלים
@@ -146,13 +148,16 @@
             שאס היא חלק מקבוצה המעניקה שירותי אבטחה, ניקיון, ניהול בנייני
             משרדים וחניונים, לצד ייעוץ אסטרטגי ומקצועי לחברות שונות במשק.
           </p>
+          <p>
+            החברה עובדת בפריסה רחבה: באר שבע והדרום, ירושלים ומרכז הארץ.
+          </p>
         </div>
       </section>
 
       <section id="why" class="why-band">
         <div class="section why-layout">
           <div>
-            <p class="eyebrow dark">למה ש.א.ס</p>
+            <p class="eyebrow dark">למה אנחנו</p>
             <h2>חברת אבטחה שלא נעלמת אחרי החתימה</h2>
           </div>
           <div class="why-list">
@@ -242,6 +247,7 @@
               <div class="client-logo"><img src="assets/logos/brinks.svg" alt="ברינקס" /></div>
               <div class="client-logo"><img src="assets/logos/freshmarket.png" alt="פרשמרקט" /></div>
               <div class="client-logo"><img src="assets/logos/machsanei-hashuk.png" alt="מחסני השוק" /></div>
+              <div class="client-logo"><img src="assets/iqc-logo.png" alt="IQC המכון לבקרה ואיכות" /></div>
             </div>
           </div>
           <button class="client-arrow client-arrow-prev" type="button" aria-label="הזזת הלוגואים שמאלה" data-client-scroll="prev">›</button>
@@ -277,6 +283,9 @@
           method="POST"
           aria-label="טופס יצירת קשר"
         >
+          <div class="form-heading quote-form-heading">
+            <h3>לקבלת הצעת מחיר</h3>
+          </div>
           <input type="hidden" name="_subject" value="פנייה חדשה מאתר ש.א.ס" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_next" value="https://www.shasltd.co.il/?sent=1#contact" />
@@ -293,7 +302,7 @@
             <input type="email" name="email" placeholder="כתובת אימייל" />
           </label>
           <label>
-            במה אפשר לעזור?
+                  תספרו לנו בקצרה מה אתם צריכים
             <textarea
               rows="4"
               name="message"
@@ -319,7 +328,7 @@
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_next" value="https://www.shasltd.co.il/?sent=1#jobs-form" />
           <label>
-            שם
+            שם מלא
             <input type="text" name="candidate_name" placeholder="שם מלא" required />
           </label>
           <label>
@@ -337,11 +346,22 @@
       <section id="employees" class="employee-section">
         <div class="employee-copy">
           <p class="eyebrow">אזור עובדים</p>
-          <h2>כניסה עתידית לעובדי החברה</h2>
-          <p>
-              כאן יהיה מקום מסודר לכניסת עובדים לצפייה בתלושי שכר, דיווחי שעות
-              ומסמכים פנימיים.
-          </p>
+          <div class="employee-title-row">
+            <h2>כניסה עתידית לעובדי החברה - בפיתוח</h2>
+            <span class="robot-worker" aria-hidden="true">
+              <span class="robot-antenna"></span>
+              <span class="robot-head">
+                <span class="robot-eye"></span>
+                <span class="robot-eye"></span>
+              </span>
+              <span class="robot-body">
+                <span class="robot-arm robot-arm-right"></span>
+                <span class="robot-arm robot-arm-left"></span>
+                <span class="robot-screen"></span>
+              </span>
+              <span class="robot-desk"></span>
+            </span>
+          </div>
         </div>
         <div class="employee-panel">
           <span>תלושי שכר</span>
@@ -363,9 +383,14 @@
           <p>
             אם נתקלתם בקושי בשימוש באתר, נשמח לקבל פנייה ולטפל בנושא בהקדם.
             ניתן לפנות בטלפון <a href="tel:086288289">08-6288289</a>
-            או בוואטסאפ העסקי.
+            או בוואטסאפ העסקי. ניתן לפנות בכתב בכתובת קרן היסוד 21, באר שבע.
           </p>
-          <p class="accessibility-note">הצהרה זו עודכנה בתאריך 09.08.2026.</p>
+          <nav class="legal-links" aria-label="מסמכי אתר">
+            <a href="accessibility.html">הצהרת נגישות מלאה</a>
+            <a href="privacy.html">מדיניות פרטיות</a>
+            <a href="sexual-harassment-policy.html">תקנון למניעת הטרדה מינית</a>
+          </nav>
+          <p class="accessibility-note">הצהרה זו עודכנה בתאריך 10.08.2026.</p>
         </div>
       </section>
     </main>
@@ -389,7 +414,7 @@
         <button type="button" data-a11y-action="links">הדגשת קישורים</button>
         <button type="button" data-a11y-action="font">פונט קריא</button>
         <button type="button" data-a11y-action="reset">איפוס</button>
-        <a href="#accessibility">הצהרת נגישות</a>
+        <a href="accessibility.html">הצהרת נגישות</a>
       </div>
     </aside>
 
